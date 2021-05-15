@@ -1,9 +1,9 @@
 *{
   box-sizing: border-box;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin: 0;
   padding: 0;
-  background-color: #d2d2d2;
+  background-color: #97dbdd;
 }
 
 .cart_img{
@@ -12,10 +12,11 @@
   border-top-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
-
+h1
 .second_div:hover{
   box-shadow: 0px 30px 18px -8px rgba(0,0,1,0.1);
   transform: scale(1.05,1.05);
+  text-align: center;
 }
 
 .second_div{
@@ -31,6 +32,9 @@
 .main{
   width: 100%;
   height: auto;
+  text-align: center;
+   margin-top: 100px;
+   
 }
 
 .under_div{
@@ -64,4 +68,162 @@ button{
 .state {
   text-align: center;
   margin-top: 250px;
+}
+
+
+
+.inc_btn{
+  margin:  10px 20px;
+}
+
+.inc_btn:hover{
+  color: rgb(209, 146, 146);
+}
+
+.dec_btn:hover {
+  color: rgb(104, 255, 217);
+}
+
+.btn_div{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+    align-items: center;
+}
+
+.ui_div{
+  background-color: #fff;
+}
+
+
+.main_div{
+  width: 100%;
+  height: 100vh;
+  background: #7bed9f;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.center_div{
+  width: 25%;
+  height: 70vh;
+  background-color: #f4f4f4;
+  box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  border-radius:  15px;
+}
+
+h1{
+  color:rgba(0,0,0,0.87);
+  font-size: 50px;
+  margin-bottom: 30px;
+  min-width: 64px;
+  box-sizing: border-box;
+  font-weight: 500;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 5px rgba(0,0,0,0.3); 
+
+}
+
+input {
+  text-align: center;
+  height: 30px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  width: 60%;
+  outline: none;
+  margin-right: 20px;
+  border-bottom: 2px solid rgb(131, 93, 93);
+}
+
+.newBtn{
+  width: 50px;
+  height: 55px;
+  background-color: #16a085 !important;
+  color: white !important;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 50% !important;
+}
+
+.newBtn:hover{
+  color: #16a085 !important;
+  background: white !important;
+}
+
+ol{
+  margin-top: 30px;
+}
+
+ol li{
+  padding-left:  0px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  color: #8566aa;
+  text-transform: capitalize;
+  list-style: none;
+}
+
+.todo_style{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.todo_style .deleteIcon{
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #8566aa;
+  margin: 0 15px 0 35px;
+  padding: 5px;
+  color: aliceblue;
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+}
+
+.todo_style .deleteIcon:hover{
+  background-color: transparent;
+  color: crimson;
+  box-shadow:5px 5px 15px -5px rgba(255,0,0,0.5);
+
+}
+
+.active_class{
+  color: #16a085;
+  border-bottom: 1px solid red;
+}
+
+.menu_style{
+  width: 100%;
+  line-height: 60px;
+  background-color: #20232a;
+  display: flex;
+  justify-content: space-around;
+}
+
+.search_bar{
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.search_bar input{
+  margin: 30px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  
 }
