@@ -24,17 +24,20 @@ const Router = () => {
     return(
         <>
         <Menu/>
-        <Switch>
-            <Route exact path='/' component={Index}/>
-            <Route path='/about/:data/:userName' component={About}/>
-            <Route exact path='/about' component={About}/>
-            <Route path='/name' component={f_name}/>
-            <Route path='/api' component={Api}/>
-            <Route path='/todolist' component={ToDoList}/>
-            <Route path='/search' component={Search}/>
-            <Route component={error}/>
-            <Redirect to="/" />
-        </Switch>
+        <div style={{backgroundColor: "lightblue"}}>
+                <Switch>
+                    <Route exact path='/' component={Index} />
+                    <Route path='/about/:data/:userName' component={About} />
+                    <Route exact path='/about' component={About} />
+                    <Route path='/name' component={f_name} />
+                    <Route path='/api' component={Api} />
+                    <Route path='/todolist' component={ToDoList} />
+                    <Route path='/search' component={Search} />
+                    {/* <Route component={error}/> */}
+                    <Redirect to="/" />
+                </Switch>
+        </div>
+        
         </>
     )
 }
