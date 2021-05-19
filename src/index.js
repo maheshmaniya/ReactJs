@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { BrowserRouter } from 'react-router-dom';
 import Router from './Router';
+import Redux from './redux';
+import Store from './store';
+import { Provider } from 'react-redux';
 import App from './App';
 import ToDoList from './ToDoList';
 import Context from './UseContext';
@@ -42,15 +45,25 @@ import * as abc from './App'; // we can access all the jsx from app with help of
 
 // ReactDOM.render(<Effect/>, document.getElementById("root"));
 
-// 7. api throgh getData
+// 7. api throgh getting data
 
 // ReactDOM.render(<ComApi />, document.getElementById("root"));
 
 // 8. routing in React
 
+// ReactDOM.render(
+//     <BrowserRouter>
+//         <Router />
+//     </BrowserRouter>
+//     , document.getElementById("root"));
+
+// 9. redux calculator app
+
 ReactDOM.render(
-    <BrowserRouter>
-        <Router />
-    </BrowserRouter>
+    <>
+        <Provider store={Store} >
+            <Redux />
+        </Provider>
+    </>
     , document.getElementById("root"));
 
